@@ -1,10 +1,7 @@
     html,
     body {
-        background-color: #fff;
+        background-color: rgb(255, 255, 255);
         font-family: 'Source Sans Pro', sans-serif;
-        overflow-x: hidden !important;
-        margin: 0px !important;
-        padding: 0px !important;
     }
     
     * {
@@ -12,21 +9,23 @@
     }
     
     .nav {
-        position: fixed;
+        position: sticky;
         z-index: 1000;
         top: 0;
         right: 0;
         left: 0;
-        height: 80px;
+        height: 50px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         padding: 0 25px 0 25px;
-        background-color: #fff;
-        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.10);
+        background-color: rgb(241, 241, 241);
+        box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
     }
     
     .nav .links a {
@@ -299,13 +298,14 @@
         }
         .nav h4 {
             font-size: 6vw;
-            margin-top: 10px;
-            margin-bottom: 10px;
+            margin-top: 1vw;
+            margin-bottom: 1vw;
         }
         .nav .links a {
             margin-right: 25px;
             font-size: 12px;
             font-weight: 600;
+            margin-bottom: 1vw;
         }
         /* LANDING PAGE */
         .landing {
